@@ -21,7 +21,10 @@ form.addEventListener('submit',(e)=>{
                 </div>
             </li>
     `
-    tasksList.innerHTML+=taskItem;  
+    tasksList.innerHTML+=taskItem; 
+    
+    // clean task input value after submitted form
+    taskInput.value="";
 })
 
 // Add Event Listener when The user wants to delete or Check the task
@@ -35,3 +38,4 @@ tasksList.addEventListener('click',(e)=>{
 
     }
 })
+
