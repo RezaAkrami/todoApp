@@ -4,11 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>To Do App</title>
 </head>
 <body>
 
+    <div class="container">
+        <form id="todo-form">
+            <input type="text" name="task" id="todo-form__input" placeholder="Enter your Task ... " autocomplete="off">
+            <input type="submit" value="Add Task" id="todo-form__subit-btn">
+        </form>
+        <ul id="todo-list">
+            <li class="todo-list__item">
+
+                <h2>reza</h2>
+
+                <div class="icons">
+                    <a href="#" class="check__icon"><i class="far fa-check-square"></i></a>
+                    <a href="#" class="delete__icon"><i class="far fa-trash-alt"></i></a>
+                </div>
+            </li>
+            <li class="todo-list__item">
+
+                <h2>reza</h2>
+
+                <div class="icons">
+                    <a href="#" class="check__icon"><i class="far fa-check-square"></i></a>
+                    <a href="#" class="delete__icon"><i class="far fa-trash-alt"></i></a>
+                </div>
+            </li>
+            <li class="todo-list__item">
+
+                <h2>reza</h2>
+
+                <div class="icons">
+                    <a href="#" class="check__icon"><i class="far fa-check-square"></i></a>
+                    <a href="#" class="delete__icon"><i class="far fa-trash-alt"></i></a>
+                </div>
+            </li>
+        </ul>
+        <button id="clear-all-tasks">Clear All</button>
+    </div>
 
     <script src="assets/js/app.js"></script>
 </body>
