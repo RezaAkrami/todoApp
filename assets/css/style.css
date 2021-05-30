@@ -1,1 +1,173 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/*Reset css*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#7f7fd5), color-stop(#86a8e7), to(#91eae4));
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+.container {
+  width: 55%;
+  margin: 1.5rem auto;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(134, 168, 231, 0.3);
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 5px 25px #2f8392, -5px -5px 25px #7b7fd4;
+          box-shadow: 5px 5px 25px #2f8392, -5px -5px 25px #7b7fd4;
+}
+
+.container #todo-form {
+  width: 100%;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container #todo-form #todo-form__input {
+  width: 78.5%;
+  border-radius: 9px;
+  border: 1px solid royalblue;
+  -webkit-box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+          box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+  height: 3.5rem;
+  margin-right: 5px;
+}
+
+.container #todo-form #todo-form__input::-webkit-input-placeholder {
+  color: #4e4a4a;
+  padding-left: 12px;
+  font-size: 15px;
+}
+
+.container #todo-form #todo-form__input:-ms-input-placeholder {
+  color: #4e4a4a;
+  padding-left: 12px;
+  font-size: 15px;
+}
+
+.container #todo-form #todo-form__input::-ms-input-placeholder {
+  color: #4e4a4a;
+  padding-left: 12px;
+  font-size: 15px;
+}
+
+.container #todo-form #todo-form__input::placeholder {
+  color: #4e4a4a;
+  padding-left: 12px;
+  font-size: 15px;
+}
+
+.container #todo-form #todo-form__input:focus {
+  outline: none;
+  -webkit-box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+          box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+  border: 1.5px solid royalblue;
+}
+
+.container #todo-form #todo-form__subit-btn {
+  width: 20%;
+  border-radius: 9px;
+  border: 1px solid royalblue;
+  -webkit-box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+          box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
+  background-color: #5fc6d8;
+  color: white;
+  height: 3.5rem;
+  cursor: pointer;
+}
+
+.container #todo-form #todo-form__subit-btn:hover {
+  -webkit-box-shadow: -1px -1px 5px royalblue;
+          box-shadow: -1px -1px 5px royalblue;
+  border: 1.5px solid royalblue;
+  font-size: 15px;
+}
+
+.container #todo-list {
+  width: 100%;
+  list-style: none;
+}
+
+.container #todo-list .todo-list__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border: 1px solid royalblue;
+  border-radius: 9px;
+  background-color: aqua;
+  background-color: white;
+  -webkit-box-shadow: -1px -1px 5px royalblue;
+          box-shadow: -1px -1px 5px royalblue;
+}
+
+.container #todo-list .todo-list__item .icons .check__icon {
+  margin-right: 1rem;
+  color: #1c8fc5;
+}
+
+.container #todo-list .todo-list__item .icons .check__icon:hover {
+  color: green;
+  font-size: 22px;
+}
+
+.container #todo-list .todo-list__item .icons .delete__icon {
+  color: rgba(190, 15, 15, 0.644);
+}
+
+.container #todo-list .todo-list__item .icons .delete__icon:hover {
+  color: #e90c0c;
+  font-size: 22px;
+  padding: 0;
+}
+
+.container #clear-all-tasks {
+  margin-top: 2.5rem;
+  width: 25%;
+  border-radius: 9px;
+  border: 1px solid royalblue;
+  -webkit-box-shadow: -1px -1px 5px royalblue;
+          box-shadow: -1px -1px 5px royalblue;
+  background-color: #ee6868;
+  color: white;
+  height: 2.8rem;
+  cursor: pointer;
+}
+
+.container #clear-all-tasks:hover {
+  border: 1.5px solid royalblue;
+  -webkit-box-shadow: -1px -1px 5px royalblue;
+          box-shadow: -1px -1px 5px royalblue;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 555px) and (min-width: 320px) {
+  .container {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
