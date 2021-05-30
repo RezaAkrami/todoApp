@@ -3,11 +3,16 @@
 let form = document.querySelector('#task-form');
 let taskInput = document.querySelector('#task-form__input');
 let tasksList = document.querySelector('#task-list');
-let clearAllTasks = document.querySelector('clear-all-tasks');
+let clearAllTasks = document.querySelector('#clear-all-tasks');
 
 // Add Event Listener when form submited
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
+
+    // checked input value 
+    if(taskInput.value==""){
+        alert("Please fill the box.")
+    }else{
 
 // Add task to the list item
     let taskItem = `
@@ -25,6 +30,7 @@ form.addEventListener('submit',(e)=>{
     
     // clean task input value after submitted form
     taskInput.value="";
+}
 })
 
 // Add Event Listener when The user wants to delete or Check the task
@@ -32,10 +38,18 @@ tasksList.addEventListener('click',(e)=>{
 
     e.target.classList.toggle('checked');
 
-    if(e.target.parentElement.classList.contains('delete__icon')){
+   if(confirm("are you sure ??")){
+        if(e.target.parentElement.classList.contains('delete__icon')){
 
-        e.target.parentElement.parentElement.parentElement.remove();
+            e.target.parentElement.parentElement.parentElement.remove();
 
-    }
+        }
+   }
 })
 
+// clear All tasks
+clearAllTasks.addEventListener('click', ()=>{
+        if(confirm("are you sure ??")){
+            tasksList.innerHTML=" ";
+        }
+})
