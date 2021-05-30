@@ -47,7 +47,12 @@ tasksList.addEventListener('click',(e)=>{
 
 // clear All tasks
 clearAllTasks.addEventListener('click', ()=>{
-        if(confirm("are you sure ??")){
-            tasksList.innerHTML=" ";
+    
+        if(tasksList.childElementCount==""){
+            alert("the task list is empty.")
+        }else{
+            if(confirm("are you sure ??")){
+                tasksList.innerHTML=" ";
+            }
         }
 })
