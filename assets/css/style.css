@@ -23,7 +23,7 @@ body {
           box-shadow: 5px 5px 25px #2f8392, -5px -5px 25px #7b7fd4;
 }
 
-.container #todo-form {
+.container #task-form {
   width: 100%;
   margin: 3rem auto;
   display: -webkit-box;
@@ -39,7 +39,7 @@ body {
       flex-wrap: wrap;
 }
 
-.container #todo-form #todo-form__input {
+.container #task-form #task-form__input {
   width: 78.5%;
   border-radius: 9px;
   border: 1px solid royalblue;
@@ -49,38 +49,38 @@ body {
   margin-right: 5px;
 }
 
-.container #todo-form #todo-form__input::-webkit-input-placeholder {
+.container #task-form #task-form__input::-webkit-input-placeholder {
   color: #4e4a4a;
   padding-left: 12px;
   font-size: 15px;
 }
 
-.container #todo-form #todo-form__input:-ms-input-placeholder {
+.container #task-form #task-form__input:-ms-input-placeholder {
   color: #4e4a4a;
   padding-left: 12px;
   font-size: 15px;
 }
 
-.container #todo-form #todo-form__input::-ms-input-placeholder {
+.container #task-form #task-form__input::-ms-input-placeholder {
   color: #4e4a4a;
   padding-left: 12px;
   font-size: 15px;
 }
 
-.container #todo-form #todo-form__input::placeholder {
+.container #task-form #task-form__input::placeholder {
   color: #4e4a4a;
   padding-left: 12px;
   font-size: 15px;
 }
 
-.container #todo-form #todo-form__input:focus {
+.container #task-form #task-form__input:focus {
   outline: none;
   -webkit-box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
           box-shadow: -1px -1px 10px #377f91, 1px 1px 10px #3f8ca0;
   border: 1.5px solid royalblue;
 }
 
-.container #todo-form #todo-form__subit-btn {
+.container #task-form #task-form__subit-btn {
   width: 20%;
   border-radius: 9px;
   border: 1px solid royalblue;
@@ -92,19 +92,19 @@ body {
   cursor: pointer;
 }
 
-.container #todo-form #todo-form__subit-btn:hover {
+.container #task-form #task-form__subit-btn:hover {
   -webkit-box-shadow: -1px -1px 5px royalblue;
           box-shadow: -1px -1px 5px royalblue;
   border: 1.5px solid royalblue;
   font-size: 15px;
 }
 
-.container #todo-list {
+.container #task-list {
   width: 100%;
   list-style: none;
 }
 
-.container #todo-list .todo-list__item {
+.container #task-list .task-list__item {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,21 +125,21 @@ body {
           box-shadow: -1px -1px 5px royalblue;
 }
 
-.container #todo-list .todo-list__item .icons .check__icon {
+.container #task-list .task-list__item .icons .check__icon {
   margin-right: 1rem;
   color: #1c8fc5;
 }
 
-.container #todo-list .todo-list__item .icons .check__icon:hover {
+.container #task-list .task-list__item .icons .check__icon:hover {
   color: green;
   font-size: 22px;
 }
 
-.container #todo-list .todo-list__item .icons .delete__icon {
+.container #task-list .task-list__item .icons .delete__icon {
   color: rgba(190, 15, 15, 0.644);
 }
 
-.container #todo-list .todo-list__item .icons .delete__icon:hover {
+.container #task-list .task-list__item .icons .delete__icon:hover {
   color: #e90c0c;
   font-size: 22px;
   padding: 0;

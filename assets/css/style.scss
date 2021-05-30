@@ -16,14 +16,14 @@ body{
     background-color: rgba(134,168,231,.3);
     border-radius: 30px;
     box-shadow: 5px 5px 25px #2f8392, -5px -5px 25px #7b7fd4;
-    #todo-form{
+    #task-form{
         width: 100%;
         margin: 3rem auto;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        #todo-form__input{
+        #task-form__input{
             width: 78.5%;
             border-radius: 9px;
             border: 1px solid royalblue;
@@ -42,7 +42,7 @@ body{
             }
         }
 
-        #todo-form__subit-btn{
+        #task-form__subit-btn{
             width: 20%;
             border-radius: 9px;
             border: 1px solid royalblue;
@@ -59,10 +59,10 @@ body{
         }
     }
 
-    #todo-list{
+    #task-list{
         width: 100%;
         list-style: none;
-        .todo-list__item{
+        .task-list__item{
             width: 100%;
             display: flex;
             align-items: center;
