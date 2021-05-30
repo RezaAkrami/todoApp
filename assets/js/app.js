@@ -38,13 +38,11 @@ tasksList.addEventListener('click',(e)=>{
 
     e.target.classList.toggle('checked');
 
-   if(confirm("are you sure ??")){
-        if(e.target.parentElement.classList.contains('delete__icon')){
-
+    if(e.target.parentElement.classList.contains('delete__icon')){
+        if(confirm("are you sure ??")){
             e.target.parentElement.parentElement.parentElement.remove();
-
         }
-   }
+    }
 })
 
 // clear All tasks
