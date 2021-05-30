@@ -135,6 +135,10 @@ body {
   font-size: 22px;
 }
 
+.container #task-list .task-list__item .icons .checked {
+  color: green;
+}
+
 .container #task-list .task-list__item .icons .delete__icon {
   color: rgba(190, 15, 15, 0.644);
 }

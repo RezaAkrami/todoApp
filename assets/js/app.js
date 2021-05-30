@@ -1,4 +1,4 @@
-// Define variable
+// ==== Define variable ====
 
 let form = document.querySelector('#task-form');
 let taskInput = document.querySelector('#task-form__input');
@@ -18,10 +18,20 @@ form.addEventListener('submit',(e)=>{
                 <h2>${taskInput.value}</h2>
 
                 <div class="icons">
-                    <a href="#" class="check__icon"><i class="far fa-check-square"></i></a>
-                    <a href="#" class="delete__icon"><i class="far fa-trash-alt"></i></a>
+                    <i class="far fa-check-square check__icon"></i>
+                    <i class="far fa-trash-alt delete__icon"></i>
                 </div>
             </li>
     `
     tasksList.innerHTML+=taskItem;
+
+    // Define the variable after submitting the form
+    let checkIcon = document.querySelector('.check__icon');
+    let deleteIcon = document.querySelector('.delete__icon');
+
+
+    // Add Event Listener when The user wants to check the task
+    checkIcon.addEventListener('click',(e)=>{           
+        e.target.classList.toggle('checked');
+    })
 })

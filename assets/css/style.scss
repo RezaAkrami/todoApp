@@ -87,7 +87,9 @@ body{
                         font-size: 22px;
                     }
                 }
-
+                .checked{
+                    color : green;
+                }
                 .delete__icon{
                     color: rgba(190, 15, 15, 0.644);
                     &:hover{
